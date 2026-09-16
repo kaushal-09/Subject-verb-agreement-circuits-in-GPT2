@@ -1,0 +1,131 @@
+prompt,correct,incorrect,setting,logit_diff,correct_pred
+The cat, runs, run,simple_sg,1.8968133926391602,True
+The dog, sleeps, sleep,simple_sg,2.9160280227661133,True
+The teacher, writes, write,simple_sg,3.741818428039551,True
+The scientist, works, work,simple_sg,3.0232491493225098,True
+The artist, sings, sing,simple_sg,3.9953043460845947,True
+The manager, arrives, arrive,simple_sg,5.264688968658447,True
+The doctor, walks, walk,simple_sg,2.514519691467285,True
+The student, talks, talk,simple_sg,1.2903008460998535,True
+The engineer, reads, read,simple_sg,-0.08829736709594727,False
+The nurse, dances, dance,simple_sg,-0.41733789443969727,False
+The pilot, runs, run,simple_sg,-0.7487916946411133,False
+The chef, sleeps, sleep,simple_sg,3.32665753364563,True
+The farmer, writes, write,simple_sg,3.887962818145752,True
+The lawyer, works, work,simple_sg,2.1862478256225586,True
+The painter, sings, sing,simple_sg,3.841575860977173,True
+The cats, run, runs,simple_pl,4.889439105987549,True
+The dogs, sleep, sleeps,simple_pl,3.2597131729125977,True
+The teachers, write, writes,simple_pl,2.929032802581787,True
+The scientists, work, works,simple_pl,4.751822471618652,True
+The artists, sing, sings,simple_pl,1.889482021331787,True
+The managers, arrive, arrives,simple_pl,3.6071860790252686,True
+The doctors, walk, walks,simple_pl,3.5957632064819336,True
+The students, talk, talks,simple_pl,3.397057056427002,True
+The engineers, read, reads,simple_pl,5.230594158172607,True
+The nurses, dance, dances,simple_pl,4.489925384521484,True
+The pilots, run, runs,simple_pl,4.025186538696289,True
+The chefs, sleep, sleeps,simple_pl,2.530974864959717,True
+The farmers, write, writes,simple_pl,2.54970645904541,True
+The lawyers, work, works,simple_pl,4.292991638183594,True
+The painters, sing, sings,simple_pl,1.6215977668762207,True
+The key to the cabinets, is, are,distractor_sg,1.921128273010254,True
+The keys to the cabinet, are, is,distractor_pl,2.470745086669922,True
+The letter from the lawyers, is, are,distractor_sg,3.8386669158935547,True
+The letters from the lawyer, are, is,distractor_pl,2.571277618408203,True
+The result of the experiments, is, are,distractor_sg,2.882244110107422,True
+The results of the experiment, are, is,distractor_pl,4.503508567810059,True
+The photo on the walls, is, are,distractor_sg,4.579557418823242,True
+The photos on the wall, are, is,distractor_pl,4.147485733032227,True
+The report near the managers, is, are,distractor_sg,0.9150829315185547,True
+The reports near the manager, are, is,distractor_pl,3.0210342407226562,True
+The message to the clients, is, are,distractor_sg,3.711761474609375,True
+The messages to the client, are, is,distractor_pl,3.830453872680664,True
+The answer from the questions, is, are,distractor_sg,2.577998161315918,True
+The answers from the question, are, is,distractor_pl,0.4671964645385742,True
+The cause of the problems, is, are,distractor_sg,3.2198801040649414,True
+The causes of the problem, are, is,distractor_pl,2.8519792556762695,True
+The effect on the decisions, is, are,distractor_sg,1.4316740036010742,True
+The effects on the decision, are, is,distractor_pl,1.5483627319335938,True
+The solution near the issues, is, are,distractor_sg,1.8625335693359375,True
+The solutions near the issue, are, is,distractor_pl,2.7147932052612305,True
+The idea to the teachers, is, are,distractor_sg,3.8915958404541016,True
+The ideas to the teacher, are, is,distractor_pl,2.870534896850586,True
+The plan from the students, is, are,distractor_sg,3.926424980163574,True
+The plans from the student, are, is,distractor_pl,1.2093572616577148,True
+The request of the committees, is, are,distractor_sg,3.0635995864868164,True
+The requests of the committee, are, is,distractor_pl,3.8376035690307617,True
+The comment on the boards, is, are,distractor_sg,2.8824329376220703,True
+The comments on the board, are, is,distractor_pl,4.372310638427734,True
+The note near the judges, is, are,distractor_sg,1.9034404754638672,True
+The notes near the judge, are, is,distractor_pl,3.124551773071289,True
+The file to the doctors, is, are,distractor_sg,1.2594175338745117,True
+The files to the doctor, are, is,distractor_pl,2.852153778076172,True
+The document from the engineers, is, are,distractor_sg,3.4976892471313477,True
+The documents from the engineer, are, is,distractor_pl,2.5839099884033203,True
+The article of the artists, is, are,distractor_sg,3.4162111282348633,True
+The articles of the artist, are, is,distractor_pl,3.5013513565063477,True
+The story on the scientists, is, are,distractor_sg,3.1670475006103516,True
+The storys on the scientist, are, is,distractor_pl,1.0179595947265625,True
+The review near the writers, is, are,distractor_sg,2.4625701904296875,True
+The reviews near the writer, are, is,distractor_pl,4.213059425354004,True
+The cat does not, like, likes,negation,8.909164428710938,True
+The cats do not, like, likes,negation,9.148262023925781,True
+The cat does not, agree, agrees,negation,10.691150665283203,True
+The cats do not, agree, agrees,negation,11.178536415100098,True
+The cat does not, care, cares,negation,12.150835037231445,True
+The cats do not, care, cares,negation,12.475954055786133,True
+The cat does not, worry, worries,negation,9.418766975402832,True
+The cats do not, worry, worries,negation,9.78405475616455,True
+The teacher does not, like, likes,negation,9.508200645446777,True
+The teachers do not, like, likes,negation,10.061485290527344,True
+The teacher does not, agree, agrees,negation,11.06478500366211,True
+The teachers do not, agree, agrees,negation,11.190594673156738,True
+The teacher does not, care, cares,negation,11.702756881713867,True
+The teachers do not, care, cares,negation,11.660983085632324,True
+The teacher does not, worry, worries,negation,10.985157012939453,True
+The teachers do not, worry, worries,negation,10.65201473236084,True
+The manager does not, like, likes,negation,9.093216896057129,True
+The managers do not, like, likes,negation,9.550840377807617,True
+The manager does not, agree, agrees,negation,10.79183292388916,True
+The managers do not, agree, agrees,negation,11.082258224487305,True
+The manager does not, care, cares,negation,11.144123077392578,True
+The managers do not, care, cares,negation,11.221993446350098,True
+The manager does not, worry, worries,negation,9.943866729736328,True
+The managers do not, worry, worries,negation,9.89750862121582,True
+The doctor does not, like, likes,negation,9.803794860839844,True
+The doctors do not, like, likes,negation,10.46359920501709,True
+The doctor does not, agree, agrees,negation,11.421550750732422,True
+The doctors do not, agree, agrees,negation,11.976692199707031,True
+The doctor does not, care, cares,negation,11.590924263000488,True
+The doctors do not, care, cares,negation,11.619791984558105,True
+The doctor does not, worry, worries,negation,10.51725959777832,True
+The doctors do not, worry, worries,negation,10.562170028686523,True
+The artist does not, like, likes,negation,9.125322341918945,True
+The artists do not, like, likes,negation,9.438142776489258,True
+The artist does not, agree, agrees,negation,10.35258960723877,True
+The artists do not, agree, agrees,negation,10.832440376281738,True
+The artist does not, care, cares,negation,11.18145751953125,True
+The artists do not, care, cares,negation,11.416964530944824,True
+The artist does not, worry, worries,negation,10.269572257995605,True
+The artists do not, worry, worries,negation,10.205568313598633,True
+He, walks, walk,pronoun,4.836638450622559,True
+He, runs, run,pronoun,3.5940070152282715,True
+He, sings, sing,pronoun,3.9395499229431152,True
+He, works, work,pronoun,4.760499000549316,True
+She, walks, walk,pronoun,4.562370300292969,True
+She, runs, run,pronoun,3.064511299133301,True
+She, sings, sing,pronoun,3.583313465118408,True
+She, works, work,pronoun,4.328902244567871,True
+It, walks, walk,pronoun,4.2899274826049805,True
+It, runs, run,pronoun,3.5184597969055176,True
+It, sings, sing,pronoun,2.2393991947174072,True
+It, works, work,pronoun,5.160202980041504,True
+They, walk, walks,pronoun,5.842899799346924,True
+They, run, runs,pronoun,6.762359619140625,True
+They, sing, sings,pronoun,6.1044020652771,True
+They, work, works,pronoun,5.801417350769043,True
+We, walk, walks,pronoun,6.74580192565918,True
+We, run, runs,pronoun,7.019617080688477,True
+We, sing, sings,pronoun,6.573426246643066,True
+We, work, works,pronoun,6.522263050079346,True

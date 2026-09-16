@@ -1,0 +1,7 @@
+setting,full_model (GPT-2 Small),circuit_mean (GPT-2 Small),drop_mean (GPT-2 Small),circuit_zero (GPT-2 Small),drop_zero (GPT-2 Small),full_model (GPT-2 Medium),circuit_mean (GPT-2 Medium),drop_mean (GPT-2 Medium),circuit_zero (GPT-2 Medium),drop_zero (GPT-2 Medium)
+distractor_pl,1.0,0.0,-1.0,0.0,-1.0,1.0,0.0,-1.0,0.2,-0.8
+distractor_sg,1.0,0.0,-1.0,0.8,-0.1999999999999999,1.0,0.0,-1.0,0.3,-0.7
+negation,1.0,1.0,0.0,1.0,0.0,1.0,1.0,0.0,0.9,-0.0999999999999999
+pronoun,1.0,1.0,0.0,0.9,-0.0999999999999999,1.0,1.0,0.0,0.8,-0.1999999999999999
+simple_pl,1.0,1.0,0.0,0.9333333333333332,-0.0666666666666666,1.0,1.0,0.0,1.0,0.0
+simple_sg,0.8,0.9333333333333332,0.1333333333333333,0.6666666666666666,-0.1333333333333334,1.0,0.9333333333333332,-0.0666666666666666,0.6666666666666666,-0.3333333333333333

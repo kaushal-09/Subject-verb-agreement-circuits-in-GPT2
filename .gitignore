@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+figures/
+
+# paper drafting notes, not part of the code
+paper_outline.md
+replication_findings.md
