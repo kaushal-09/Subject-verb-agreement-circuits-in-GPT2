@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-"""Find the subject-verb agreement circuit in a model and test what it can do.
-
-    python run_experiment.py --model gpt2
-    python run_experiment.py --model gpt2-medium --device cuda
-"""
-
 import argparse
 import json
 import os

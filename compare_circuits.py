@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""Compare the circuits found in two models.
-
-    python compare_circuits.py results/gpt2 results/gpt2-medium
-"""
-
 import json
 import os
 import sys

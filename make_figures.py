@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-"""Figures and LaTeX tables for the paper."""
-
 import argparse
 import json
 import os
