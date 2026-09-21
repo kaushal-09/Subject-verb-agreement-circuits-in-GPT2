@@ -15,8 +15,6 @@ LABELS = {"simple_sg": "Simple (sg)", "simple_pl": "Simple (pl)", "negation": "N
           "distractor_pl": "Attraction (pl)"}
 BLUE, ORANGE = "#4C72B0", "#DD8452"
 
-AFRICA_CIRCUIT = [(11, 6), (0, 4), (11, 4), (0, 8), (11, 7), (2, 6),
-                  (1, 0), (2, 1), (1, 1), (6, 0), (10, 0), (9, 4)]
 
 
 def load(results_dir):
@@ -129,32 +127,6 @@ def depth(comparison_dir, out_path):
     plt.close(fig)
 
 
-def overlap(results_dir, out_path):
-    _, summary = load(results_dir)
-    ours = {tuple(h) for h in summary["circuit"]}
-    theirs = set(AFRICA_CIRCUIT)
-
-    fig, ax = plt.subplots(figsize=(5.4, 4.4))
-    ax.set_xlim(-0.5, summary["n_heads"] - 0.5)
-    ax.set_ylim(summary["n_layers"] - 0.5, -0.5)
-    ax.set_xticks(range(summary["n_heads"]))
-    ax.set_yticks(range(summary["n_layers"]))
-    ax.set_xlabel("Head")
-    ax.set_ylabel("Layer")
-    ax.grid(color="0.9", linewidth=0.5)
-    ax.set_axisbelow(True)
-
-    for heads, colour, label in [(theirs - ours, BLUE, "Africa (2025)"),
-                                 (ours - theirs, ORANGE, "This work"),
-                                 (ours & theirs, "#2B2B2B", "Both")]:
-        ax.scatter([h for _, h in heads], [l for l, _ in heads], s=110, c=colour,
-                   label=label, zorder=3, edgecolors="white", linewidths=0.8)
-
-    ax.legend(frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.13), ncol=3)
-    ax.set_title("Two circuits for the same task in GPT-2 Small")
-    fig.savefig(out_path)
-    plt.close(fig)
-
 
 def tables(results_dirs, labels, out_path):
     rows = []
@@ -193,7 +165,6 @@ def main():
     accuracy(dirs, labels, out("accuracy_by_setting.pdf"))
     ablation(dirs, labels, out("ablation_comparison.pdf"))
     logit_diffs(dirs, labels, out("logit_diff_distribution.pdf"))
-    overlap(dirs[0], out("circuit_overlap.pdf"))
     depth(f"{args.results}/comparison", out("depth_profile.pdf"))
     tables(dirs, labels, out("tables.tex"))
 
