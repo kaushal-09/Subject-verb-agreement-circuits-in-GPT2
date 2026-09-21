@@ -1,6 +1,6 @@
 # Subject-verb agreement circuits in GPT-2
 
-Finds the attention heads that handle subject-verb agreement in
+This repo finds the attention heads that handle subject-verb agreement in
 GPT-2, then checks whether those heads still work once you put a distractor noun
 between the subject and the verb ("the key to the cabinets is"). They don't. The
 circuit keeps negation, pronouns and plurals at full accuracy and then gets every
