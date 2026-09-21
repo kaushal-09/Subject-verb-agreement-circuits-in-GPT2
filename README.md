@@ -1,6 +1,6 @@
 # Subject-verb agreement circuits in GPT-2
 
-Term paper code. It finds the attention heads that handle subject-verb agreement in
+Finds the attention heads that handle subject-verb agreement in
 GPT-2, then checks whether those heads still work once you put a distractor noun
 between the subject and the verb ("the key to the cabinets is"). They don't. The
 circuit keeps negation, pronouns and plurals at full accuracy and then gets every
@@ -13,8 +13,8 @@ agreeing with the nearest noun rather than tracking the actual subject.
     python compare_circuits.py results/gpt2 results/gpt2-medium
     python make_figures.py
 
-Run them in that order, each one reads what the last one wrote. Small is fine on CPU
-and takes a few minutes, Medium I ran on a 1660 Ti.
+When we them in that order, each one reads what the last one wrote. Small is fine to run on the CPU
+and takes a few minutes, Medium one I ran on a 1660 Ti graphics card.
 
 run_experiment.py does the whole pipeline for one model: builds the 130 test
 sentences, runs the patching sweep to score every head, keeps the top 8.33% as the
@@ -23,7 +23,9 @@ Output goes to results/<model>/. compare_circuits.py takes two of those folders 
 compares them, which is where the depth profile numbers come from.
 make_figures.py draws the plots and writes tables.tex.
 
-The two files worth editing are src/dataset.py for the sentences and
-src/circuit_analysis.py for the method itself. results/ is committed so you can read
-the numbers without rerunning anything. figures/ is gitignored because make_figures.py
+The two files src/dataset.py for the sentences and
+src/circuit_analysis.py for the method. 
+results/ is committed so you can read
+the numbers without rerunning anything. 
+figures/ is gitignored because make_figures.py
 rebuilds it from results/ anyway.
